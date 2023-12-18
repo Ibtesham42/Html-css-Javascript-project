@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#grey{
+    color: black;
+    background-color: gray;
+    padding: 40px;
+    
+    
+}
+#white{
+    color: black;
+    background-color: white;
+    padding: 40px;
+}
+#red{
+    color: black;
+    background-color: red;
+    padding: 40px;
+
+}
+#blue{
+    color: black;
+    padding: 40px;
+    background-color: blue;
+}
+.canvas{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border-width, border-style, border-color */
+border-width: 15px;
+border-style: solid;
+border-radius: 40px;
+
+    
+
+}
+h1{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 200px;
+}
