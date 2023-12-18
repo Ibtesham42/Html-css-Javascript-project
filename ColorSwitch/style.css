@@ -8,25 +8,54 @@
     color: black;
     background-color: gray;
     padding: 40px;
+    border-radius: 20px;
     
     
 }
+#grey:hover{
+    background-color: rgb(168, 168, 168);
+    border-radius: 0px;
+}
+
+
+
 #white{
     color: black;
     background-color: white;
     padding: 40px;
+    border-radius: 20px;
+}
+#white:hover{
+    background-color: rgb(236, 234, 234);
+    border-radius: 0px;
+
 }
 #red{
     color: black;
     background-color: red;
     padding: 40px;
+    border-radius: 20px;
 
 }
+#red:hover{
+    background-color: rgb(121, 1, 1);
+    border-radius: 0px;
+}
+
 #blue{
     color: black;
     padding: 40px;
     background-color: blue;
+    border-radius: 20px;
 }
+
+#blue:hover{
+    background-color: rgb(21, 2, 144);
+    border-radius: 0px;
+
+}
+
+
 .canvas{
     display: flex;
     justify-content: space-evenly;
@@ -43,4 +72,17 @@ h1{
     display: flex;
     justify-content: center;
     padding-bottom: 200px;
+}
+#edit{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 40px;
+    color: rgb(0, 0, 6);
+    margin-left: 700px;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+#edit:hover{
+    background-color: blue;
 }
