@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(Launching_page_img/images/background.png);
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    position: relative;
+
+}
+.logo{
+    width: 170px;
+    padding: 20px;
+    margin: 30px;
+    cursor: pointer;
+}
+.content{
+    top: 40%;
+    position: absolute;
+    transform:  translateY(-50%);
+    color: #fff;
+
+}
+.content p{
+    font-size: 40px;
+}
+
+
+
+.content h1{
+    font-size: 64px;
+    font-weight: 600;
+}
+.content h1 span{
+    color: #ff3753;
+}
+.content button{
+    background: rgb(4, 78, 68);
+    border-radius: 80px;
+    
+    outline: none;
+    padding: 12px 25px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.content button img{
+    width: 20px;
+    margin-left: 10px;
+}
+.launch-time{
+    display: flex;
+    justify-content: space-around; /* Adjust alignment as needed */
+    margin-top: 20px;
+}
+.launch-time div{
+    text-align: center; /* Center the content inside each div */
+    flex-basis: 25%;
+}
+.launch-time div p{
+    font-size: 60px;
+    margin-bottom: -5px;
+}
+.rocket{
+    width: 250px;
+    position: absolute;
+    right: -50%;
+    bottom:  0;
+    animation: rocket 2s linear infinite;
+}
+
+@keyframes rocket{
+    0%{
+        bottom: 0;
+        opacity: 0;
+
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
