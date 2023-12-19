@@ -1,0 +1,31 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#start{
+    padding: 20px;
+    margin: 40px;
+    border-radius: 10px;
+    color: black;
+    background-color: azure;
+}
+#start:hover{
+    background-color: green;
+}
+
+#stop{
+    padding: 20px;
+    margin: 40px;
+    border-radius: 10px;
+    color: black;
+    background-color: azure;
+}
+#stop:hover{
+    background-color: red;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 200px;
+}
