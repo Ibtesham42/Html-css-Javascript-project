@@ -68,22 +68,22 @@ function ClearInputFieldEl(){
     inputFieldEl.value = " "
 }
 
-function addItemToShoopingList(item){
-    let valueId = item[0]
-    let valueVal = item[1]
+function addItemToShoopingList(item) {
+    let valueId = item[0];
+    let valueVal = item[1];
     let newEl = document.createElement("li");
-    newEl.textContent = valueVal
+    newEl.textContent = valueVal;
 
-    newEl.addEventListener("click", function(){
-        let exactLocationOdItemInDB = ref(database,`List/${valueId}`)
-        remove(exactLocationOdItemInDB)
-    })
+    newEl.addEventListener("click", function() {
+        // Show a confirmation dialog box
+        let confirmation = confirm("Are you sure you want to delete this item?");
 
+        if (confirmation) {
+            // Remove the item from the database
+            let exactLocationOdItemInDB = ref(database, `List/${valueId}`);
+            remove(exactLocationOdItemInDB);
+        }
+    });
 
-
-
-
-
-    shoopingListEl.append(newEl)
-
+    shoopingListEl.append(newEl);
 }
